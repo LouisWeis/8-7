@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>生日快乐！</title>
+    <title>Happy Birthday！</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <!--<meta itemprop="image" content="./images/fenxiang.png" />-->
     <style>
@@ -92,14 +92,14 @@
 </div>
 <canvas class="canvas" width="1820" height="905"></canvas>
 <p class="text" style="color: #ed3073;">
-    世界已经有你
+    The world has had you for
     <br/>
     <span id="span_dt_dt"></span>
 </p>
 <script language="javascript">
     function show_date_time() {
         window.setTimeout("show_date_time()", 1000);
-        BirthDay = new Date("09/21/1992 00:00:00");//这个日期是可以修改的
+        BirthDay = new Date("09/17/2005 00:00:00");//这个日期是可以修改的
         today = new Date();
         timeold = (today.getTime() - BirthDay.getTime());
         sectimeold = timeold / 1000
@@ -112,7 +112,7 @@
         e_minsold = (e_hrsold - hrsold) * 60;
         minsold = Math.floor((e_hrsold - hrsold) * 60);
         seconds = Math.floor((e_minsold - minsold) * 60);
-        span_dt_dt.innerHTML = daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+        span_dt_dt.innerHTML = daysold + "DAY" + hrsold + "HOUR" + minsold + "MINUTE" + seconds + "SECOND";
     }
     show_date_time();
 </script>
@@ -576,7 +576,7 @@
     S.init();
 </script>
 <!--//音乐可改-->
-<audio autoplay="autoplay" loop="loop">
+<audio controls >
     <source src="http://m10.music.126.net/20180509183512/5ae461e9a42675d782840bf139b05c60/ymusic/e492/ea7a/6a27/8799d19e52d9bbe3ae15febb03d7efdb.mp3" type="audio/mpeg">
 </audio>
 </body>
